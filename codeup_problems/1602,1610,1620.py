@@ -16,3 +16,19 @@ import sys
 n = sys.stdin.readline()
 a,b = map(int,sys.stdin.readline().split())
 solve(n,a,b)
+
+'''1620'''
+def solve(n):
+    global total
+    total=0
+    for i in range(len(n)):
+        total +=int(n[i])
+    n = total
+    if len(str(n)) == 1:
+        return print(n)
+    else:
+        n = str(total)
+        solve(n)
+
+n = input()
+solve(n)
