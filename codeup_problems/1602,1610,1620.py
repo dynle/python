@@ -9,16 +9,16 @@ n = input()
 print(solve(n))
 
 '''1610'''
-def solve(n,a,b):
+def solve2(n,a,b):
     for i in range(b):
         sys.stdout.write(n[a+i])
 import sys
 n = sys.stdin.readline()
 a,b = map(int,sys.stdin.readline().split())
-solve(n,a,b)
+solve2(n,a,b)
 
 '''1620'''
-def solve(n):
+def solve3(n):
     global total
     total=0
     for i in range(len(n)):
@@ -28,7 +28,7 @@ def solve(n):
         return print(n)
     else:
         n = str(total)
-        solve(n)
+        solve3(n)
 
 n = input()
-solve(n)
+solve3(n)
