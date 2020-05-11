@@ -1,0 +1,2 @@
+li = set(range(1,100))
+print(li)
