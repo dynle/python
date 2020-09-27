@@ -2,12 +2,16 @@ class Cal(object):
     def __init__(self,v1,v2):
         self.v1 = v1 #if put __ in front of the variable,
         self.v2 = v2 #cannot access to the variable outside of the Class
+
     def add(self):
         return self.v1+self.v2
+
     def subtract(self):
         return abs(self.v1-self.v2)
+
     def getV1(self):
         return self.v1
+        
     def setV1(self,v):
         if isinstance(v, int):
             self.v1 = v 
